@@ -13,11 +13,11 @@ pool:
 
 resources:
   repositories:
-    - repository: DogThingyMaven
+    - repository: DogTrackerMaven
       type: github
-      name: asianhue/DogThingyMaven
+      name: KWong8248/DogTrackerMaven
       ref: main
-      endpoint: asianhue
+      endpoint: KWong8248
 
 jobs:
   - job: test_code
@@ -58,7 +58,7 @@ jobs:
 
     # Authorize Github Credentials
     - script: |
-        git config --global user.email "kenneth5982@gmail.com" && git config --global user.name "asianhue"
+        git config --global user.email "kwong8248@gmail.com" && git config --global user.name "KWong8248"
       displayName: Set Git User Information
       
     # Switch to the main branch
